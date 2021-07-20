@@ -6,7 +6,8 @@
   "scripts": {
     "prettify": "prettier -l --write \"**/*.js\"",
     "test": "jest",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "production": "node index.js"
   },
   "prettier": {
     "trailingComma": "all",
