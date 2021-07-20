@@ -1,0 +1,25 @@
+{
+  "name": "back-end-data-collecting",
+  "version": "1.0.0",
+  "description": "\"Collect information from reddit\"",
+  "main": "index.js",
+  "scripts": {
+    "prettify": "prettier -l --write \"**/*.js\"",
+    "test": "jest",
+    "dev": "nodemon index.js"
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "tabWidth": 4,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^1.18.2"
+  },
+  "author": "Aurora Bailey",
+  "license": "ISC"
+}
