@@ -1,0 +1,6 @@
+version: "3.9"
+services:
+  collecting:
+    command: npm run dev
+    environment:
+      NODE_ENV: development

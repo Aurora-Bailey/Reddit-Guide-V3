@@ -1,6 +1,0 @@
-version: "3.9"
-services:
-  collecting:
-    command: npm run production
-    environment:
-      NODE_ENV: production

@@ -2,9 +2,9 @@ version: "3.9"
 services:
   collecting:
     build: ./back-end-data-collecting
-    command: npm run dev
+    command: npm run production
     volumes:
       - ./back-end-data-collecting:/back-end-data-collecting
     environment:
       VERSION: ${VERSION}
-      NODE_ENV: development
+      NODE_ENV: production
