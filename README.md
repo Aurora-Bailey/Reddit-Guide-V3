@@ -3,14 +3,18 @@
 
 Dev
 ```
-docker compose build
-docker compose -f docker-compose.dev.yml -f docker-compose.yml up -d
+docker compose -f docker-compose.dev.yml -f docker-compose.yml up -d --build
 ```
+
+test
+```
+docker-compose -f docker-compose.dev.yml -f docker-compose.yml run collecting npm run test
+```
+
 
 Production
 ```
-docker compose build
-docker compose up -d
+docker compose up -d --build
 ```
 
 

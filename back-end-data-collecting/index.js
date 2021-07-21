@@ -1,22 +1,3 @@
-class Collecting {
-    constructor() {
-        this.loopCount = 0;
-    }
+const collecting = require('./Collecting')
 
-    start() {
-        this.doNext().catch(console.error);
-    }
-
-    async doNext() {
-        console.log(`Hello world!!! From loop ${this.loopCount}`);
-        this.loopCount++;
-
-        // Set up next loop
-        setTimeout(() => {
-            this.doNext().catch(console.error);
-        }, 1000);
-    }
-}
-
-const collecting = new Collecting();
-collecting.start();
+collecting.start()
